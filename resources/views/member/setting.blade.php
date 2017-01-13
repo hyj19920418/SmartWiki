@@ -34,6 +34,7 @@
                         <td>#</td>
                         <td>名称</td>
                         <td>键名</td>
+                        <td>键值</td>
                         <td>添加时间</td>
                         <td>操作</td>
                     </tr>
@@ -49,6 +50,7 @@
                             <td>{{$item->id}}</td>
                             <td>{{$item->name}}</td>
                             <td>{{$item->key}}</td>
+                            <td>{{$item->value}}</td>
                             <td>{{$item->create_time}}</td>
                             <td>
                                 <button type="button" class="btn btn-danger btn-sm delete-item" data-id="{{$item->id}}" {{$item->config_type == 'system'?'disabled':''}} data-loading-text="删除中...">
